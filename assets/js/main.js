@@ -10,18 +10,20 @@ $(document).ready(function() {
   $(window).scroll(function() {
 
     if ($(this).scrollTop() > 200) {
-            $('.go-top').fadeIn(200);
-        } else {
-            $('.go-top').fadeOut(200);
-        }
-    });
+      $('.go-top').fadeIn(200);
+    } else {
+      $('.go-top').fadeOut(200);
+    }
+  });
 
-    // Animate the scroll to top
-    $('.go-top').click(function(event) {
-        event.preventDefault();
+  // Animate the scroll to top
+  $('.go-top').click(function(event) {
+    event.preventDefault();
 
-        $('html, body').animate({scrollTop: 0}, 300);
-    });
+    $('html, body').animate({
+      scrollTop: 0
+    }, 300);
+  });
 
 
 
@@ -53,12 +55,12 @@ $(document).ready(function() {
   $('#officers').removeClass('hidden');
   $('#officers').addClass('animated fadeIn');
 
-  $.getJSON(apiCall, function(data){
-        $.each(data.items, function(i,item){
-          $("<img data-u='image'/>").attr("src", item.media.m).appendTo(".flickr-stream")
-          .wrap("<div>" + "</div>");
+  $.getJSON(apiCall, function(data) {
+    $.each(data.items, function(i, item) {
+      $("<img data-u='image'/>").attr("src", item.media.m).appendTo(".flickr-stream")
+        .wrap("<div>" + "</div>");
+    });
   });
-});
 
 
 
@@ -78,14 +80,29 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('#calendar').fullCalendar({
 
-    defaultView: 'basicWeek',
-    aspectRatio: 2,
+    defaultView: 'month',
 
+    views: {
+  listDay: { buttonText: 'month' },
+  listWeek: { buttonText: 'list for this week' }
+},
+    aspectRatio: 1.5,
+
+
+    eventClick: function(event) {
+      // opens events in a popup window
+      window.open(event.url, 'gcalevent', 'width=700,height=600');
+      return false;
+    },
     header: {
       left: 'prev,next today',
-    	center: 'title',
-    	right: 'month,agendaWeek,agendaDay'
+      center: 'title',
+      right: 'month,listWeek'
     },
+    contentHeight: '400',
+
+    eventTextColor: 'white',
+
     googleCalendarApiKey: 'AIzaSyBu5kL2kgj9AZXCM8kfSLukPx1Vb7bRSh4',
     events: {
       googleCalendarId: 'electronicsosu@gmail.com',
@@ -112,11 +129,7 @@ $(document).ready(function() {
 
 
 
-
 // jQuery(document).ready( function(){
 //    //jQuery('#flash').fadeIn(2000);
 //$('#brand img').addClass('animated zoominDown');
 //} );
-
-
-
