@@ -135,9 +135,9 @@ var formatGoogleCalendar = (function() {
       if (format[i] === '*summary*') {
         output = output.concat('<h4><span class="summary">' + htmlLink + summary + '</a></span></h4>');
       } else if (format[i] === '*date*') {
-        output = output.concat('<br><span class="date">' + dateFormatted + '</span>');
+        output = output.concat('<span class="date">' + dateFormatted + '</span>');
       } else if (format[i] === '*description*') {
-        output = output.concat('<br><span class="description">' + description + '</span>');
+        output = output.concat('<span class="description">' + description + '</span>');
       } else if (format[i] === '*location*') {
         output = output.concat('<br><span class="location">' + location + '</span>');
       } else {
