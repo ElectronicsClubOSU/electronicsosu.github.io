@@ -111,6 +111,18 @@ var formatGoogleCalendar = (function() {
     return newObject;
   };
 
+  function autolink(str, attributes) {
+    attributes = attributes || {};
+    var attrs = "";
+    for (name in attributes)
+      attrs += " " + name + '="' + attributes[name] + '"';
+
+    var reg = new RegExp("(\\s?)((http|https|ftp)://[^\\s<]+[^\\s<\.)])", "gim");
+    str = str.toString().replace(reg, '$1<a href="$2"' + attrs + '>$2</a>');
+
+    return str;
+  }
+
   //Get all necessary data (dates, location, summary, description) and creates a list item
   var transformationList = function(result, tagName, format) {
     var htmlLink = "<a href=\"" + result.htmlLink + "\" class=\"display:inline-block;width:100%;height:100%\">";
@@ -127,6 +139,8 @@ var formatGoogleCalendar = (function() {
       description = result.description || '',
       location = result.location || '',
       i;
+
+      description = autolink(description);
 
     for (i = 0; i < format.length; i++) {
 
