@@ -118,7 +118,7 @@ var formatGoogleCalendar = (function() {
       attrs += " " + name + '="' + attributes[name] + '"';
 
     var reg = new RegExp("(\\s?)((http|https|ftp)://[^\\s<]+[^\\s<\.)])", "gim");
-    str = str.toString().replace(reg, '$1<a href="$2"' + attrs + '>$2</a>');
+    str = str.toString().replace(reg, '$1<b><a href="$2"' + attrs + '>$2</a></b>');
 
     return str;
   }
@@ -149,12 +149,12 @@ var formatGoogleCalendar = (function() {
       if (format[i] === '*summary*') {
         output = output.concat('<h4><span class="summary">' + htmlLink + summary + '</a></span></h4>');
       } else if (format[i] === '*date*') {
-        output = output.concat('<span class="date">' + dateFormatted + '</span>');
+        output = output.concat('<span class="date"><b>' + dateFormatted + '</b></span>');
       } else if (format[i] === '*description*') {
         if(!!description)
         output = output.concat('<br><span class="description">' + description + '</span>');
       } else if (format[i] === '*location*') {
-        output = output.concat('<br><span class="location">' + location + '</span>');
+        output = output.concat('<br><span class="location"><b>' + 'Location: ' + location + '</b></span>');
       } else {
         if ((format[i + 1] === '*location*' && location !== '') ||
           (format[i + 1] === '*summary*' && summary !== '') ||
