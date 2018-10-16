@@ -152,7 +152,7 @@ var formatGoogleCalendar = (function() {
         output = output.concat('<span class="date"><b>' + dateFormatted + '</b></span>');
       } else if (format[i] === '*description*') {
         if(!!description)
-        output = output.concat('<br><span class="description">' + description + '</span>');
+        output = output.concat('<br><br><span class="description" style="white-space: pre-wrap;">' + description + '</span>');
       } else if (format[i] === '*location*') {
         output = output.concat('<br><span class="location"><b>' + 'Location: ' + location + '</b></span>');
       } else {
