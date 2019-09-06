@@ -324,6 +324,9 @@ var formatGoogleCalendar = (function() {
         pastTopN: -1,
         upcomingTopN: -1,
         itemsTagName: 'li',
+        // Set date range to choose events from
+        timeMin: '2019-09-06T18:30:00 -05:00',
+        timeMax: '2020-09-06T22:00:00 -05:00'
         upcomingSelector: '#events-upcoming',
         pastSelector: '#events-past',
         upcomingHeading: '<h2>Upcoming events</h2>',
