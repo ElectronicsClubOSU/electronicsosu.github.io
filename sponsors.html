@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+    <head>
 <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-touch-icon-57x57.png">
@@ -58,103 +57,84 @@
 
   <!-- JS -->
   <script src="assets/js/main.js"></script>
-
-  <!-- CALENDAR.IO -->
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.0/fullcalendar.min.css' />
-  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.0/moment.min.js'></script>
-  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.0/fullcalendar.min.js'></script>
-  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.0/gcal.js'></script>
-</head>
-
-
+    </head>
 <body>
 
+    <div id="navigation" class=" navbar-default navbar-static-top">
 
-<div id="navigation" class=" navbar-default navbar-static-top hidden">
-
-    <!-- MENU ICON FOR MOBILE -->
-    <div class="navbar-header navbar-static-top">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
+        <!-- MENU ICON FOR MOBILE -->
+        <div class="navbar-header navbar-static-top">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+        </div>
 
 
-    <div class="navbar-collapse collapse">
+        <div class="navbar-collapse collapse">
 
-      <!--
+<!--
                 <a href="https://upverter.com/ElectronicsClubOSU/" target="_blank" > <img src="assets/img/upverter_logo.png" alt="Upverter Logo" class="octocat" id="github">  </a>
 -->
-      <!-- NAVIGATION LINKS -->
-      <ul class="nav navbar-nav">
-        <li><a href="https://drive.google.com/drive/folders/0B5gJXae1kH7UOHhBZlNxNGdnSU0?usp=sharing"target="_blank" class="smoothScroll">Energia</a>
-        </li>
-        <li><a href="http://eepurl.com/gCbD2f" target="_blank" class="smoothScroll">Mailing List</a>
-        </li>
-        <li><a href="https://inventory-e.club/" target="_blank" class="smoothScroll">Lab Resources</a>
-        </li>
-        <li><a href="calendar.html" class="smoothScroll">Calendar</a> 
-		<!-- <li><a href="https://calendar.google.com/calendar/u/1?cid=ZWxlY3Ryb25pY3Nvc3VAZ21haWwuY29t" target="_blank" class="smoothScroll">Calendar</a> -->
-        </li>
-        <li><a href="officers.html" class="smoothScroll">Officers</a>
-        </li>
-        <li><a href="meeting.html" target="_blank" class="smoothScroll">Meeting Slides</a>
-        </li>
-		<li><a href="sponsors.html" target="_blank" class="smoothScroll">Sponsors</a>
-        </li>
-      </ul>
+        <!-- NAVIGATION LINKS -->
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">home</a></li>
+            <li><a href="http://eepurl.com/gCbD2f" target="_blank" class="smoothScroll">Mailing List</a>
+            <li><a href="https://inventory-e.club/" target="_blank" class="smoothScroll">Lab Resources</a></li>
+            <li><a href="calendar.html" class="smoothScroll">Calendar</a></li>
+            <li><a href="Officers.html" class="smoothScroll">Officers</a></li>
+            <li><a href="meeting.html" target="_blank" class="smoothScroll">Meeting Slides</a></li>
+			<li><a href="#" class="smoothScroll">Sponsors</a></li>
+        </ul>
 
+        </div><!--/.nav-collapse -->
+
+        </div>
+	</div>
+
+
+	<div id=landing>
+    <div class="container centered">
+        <div id="brand-alt" class="hidden">
+
+            <!-- MAIN LOGO -->
+            <a href="index.html" >
+            <img src="assets/img/logo/electronics_club_logo-alt.png">
+            </a>
+
+        </div>
     </div>
-    <!--/.nav-collapse -->
-
-  </div>
-
-
-<div id=landing>
-  <div class="container centered">
-    <div id="brand-alt" class="hidden">
-
-      <!-- MAIN LOGO -->
-      <a href="index.html">
-        <img src="assets/img/logo/electronics_club_logo-alt.png">
-      </a>
-
-    </div>
-  </div>
 </div>
 
 
 <!-- CONTENT BEGINS -->
 
 
-<!-- CALENDAR -->
-<style>
+<div id="intro"> <!-- INTRO WRAP <BEGINS> -->
 
-  body {
-    padding: 0;
-    font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
-  }
 
-  #loading {
-    display: none;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
 
-  #calendar {
-    margin:0px 10px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-</style>
-<div id="intro">
-  <div class="centered" id="calendar"></div>
+<!-- ===== SPONSORS <BEGINNING> ===== -->
+
+<div id="sponsors" class="animated fadeIn">
+	<div class="container">
+
+    <div class="row centered">
+		<h1>Sponsors</h1> <!-- PAGE TITLE -->
+		
+        <a href="https://www.northropgrumman.com/" target="_blank"><img src="assets/img/sponsors/NorthropGrummanLogo.png"></a>
+		<a href="https://www.ti.com/" target="_blank"><img src="assets/img/sponsors/TexasInstrumentsLogo.png"></a>
+		
+	</div>
+
+	</div>
 </div>
 
+<!-- ===== SPONSORS <END> ===== -->
 
+<!-- ===== INTRO ENDS ===== -->
+</div>
 <!-- ===== FOOTER ===== -->
 <div id="contact">
     <div id="footer">
@@ -195,19 +175,15 @@
     </ul>
 
 </div>
-</div>
-</div>
 
+    </div>
+</div>
 <!-- ===== FOOTER ENDS ===== -->
 
+<!-- ===== BACK TO TOP BUTTON ===== -->
+        <a href="#" class="go-top">&#9650;</a>
+<!-- ===== BACK TO TOP BUTTON ENDS===== -->
 
 
-      <!-- ===== BACK TO TOP BUTTON ===== -->
-      <a href="#" class="go-top">&#9650;</a>
-      <!-- ===== BACK TO TOP BUTTON ENDS===== -->
-
-
-
-    </body>
-
+</body>
 </html>
