@@ -452,29 +452,16 @@ hr {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
-#officers {
-  padding-top: 30px;
-}
-#officers h1 {
-  padding-bottom: 50px;
-}
-#officers h4 {
-  padding-bottom: 75px;
-}
-#organization-desc {
-  padding-top: 30px;
-  color: white;
-}
+
+
+
 
 /* Rounded avatar */
 
 #wrap {
   text-align: center;
 }
-#officers .avatar {
-  border-radius: 50% 50% 50% 50%;
-  width: 200px;
-}
+
 #location {
   padding-bottom: 30px;
   text-align: center;
