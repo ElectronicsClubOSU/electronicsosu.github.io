@@ -1,0 +1,387 @@
+
+body{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #444444;
+    font-weight: 300;
+    font-size: 16px;
+    overflow-x: hidden;
+    background-color: #FAFAFA;
+    margin: 0px;
+    display: flex;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 65px;
+    z-index: 9999; 
+    background-color: crimson;
+    box-shadow: -20px 0 14px 0 rgb(0 0 0 / 10%), inset 0 -1px 0 rgb(0 0 0 / 10%);
+}
+
+
+.header #icon{
+  position: relative;
+  left: 1400px;
+  color: whitesmoke;
+}
+.header-button {
+  position: relative;
+  bottom: 8px;
+    padding: 10px 13px;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 16px;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 7px;
+    transition: box-shadow .3s;
+    cursor: pointer;
+    margin-left: 45px;
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+.header img.logo {
+    position: relative;
+    left: 15px;
+    top: 12px;
+    height: 50px;
+}
+
+.main {
+  margin-top: 65px;
+  margin-left: 70px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+.main #landing {
+    height: 300px;
+    text-align: center;
+    width: 100%;
+    background: url(../img/circuits.jpg);
+    background-size: cover;
+    background-position: 0px 0px, center;
+}
+
+.main #landing img{
+    width: auto;
+    height: 90%;
+    position: relative;
+
+}
+.navbar {
+  position: fixed;
+    left:0;
+    top: 65px;
+    bottom: 0;
+    width: 70px;
+    background-color: #1e1e1e;
+    overflow: auto;
+}
+
+.navbar a {
+    display: block;
+    text-align: center;
+    padding: 15px 0 15px 0px;
+    color: 	#DCDCDC;
+    text-decoration: none;
+  }
+
+  .navbar a:hover {
+    color: white;
+    background-color: #2e2e30;
+  }
+
+  .navbar a .label{
+    padding-top: 8px;
+    bottom: 20px;
+    text-align: center;
+    font-size: 12px;
+  }
+  .navbar a.active-page
+{
+  background-color:#2e2e30;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+  color: #E00000 ;
+}
+.navbar .active-page .label
+{
+  color: #E00000 ;
+}
+   .center {
+    position: relative;
+    justify-content: center;
+    width: auto;
+    display: flex;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  #description{
+    margin-top: 10px;
+    width: 1400px;
+    line-height: 1.7;
+  }
+
+  .horizontal-line{
+    text-align: center;
+    width: 1400px;
+    display: block;
+
+  }
+  
+  .center p {
+    padding-right: 40px;
+    margin-left: 150px;
+    margin-right: 180px;
+    display: block;
+  }
+
+  #information {
+    color: #646464;
+    margin: 32px 128px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+ #information .info-section{
+    width: 45%;
+    margin-bottom: 32px;
+    padding-right: 50px;
+   
+ }
+
+ .info-details{
+  line-height: 1.7;
+  margin-top: 0px;
+ }
+
+
+
+.sponsor-section{
+  text-align: center;
+}
+
+#sponsor-images{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #111;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+  padding-left: 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 25px;
+  transition: color .4s ease;
+}
+.socials a:hover i{
+  color: red;
+}
+
+
+#meeting-time ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+#meeting-time li {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+
+}
+
+#meeting-time a {
+  color: #6699cc;
+}
+
+.intro p {
+  font-weight: 500;
+}
+
+
+.section-title h2 {
+  text-transform: uppercase;
+}
+.section-title {
+  margin: 3% 0;
+}
+.section-title p {
+  text-transform: uppercase;
+  font-weight:bold;
+}
+.single-team{
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow:5px 5px 15px #000;
+}
+
+.team-img{
+  position: center;
+  z-index: 5;
+  overflow: hidden;
+  height: 300px;
+  max-width: 100%;
+
+}
+.team-img img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  transition: .3s;
+}
+.single-team:hover .team-img img {
+  transform: scale(1.1);
+}
+.team-content {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  bottom: 0;
+  transition: all .4s;
+  background: maroon;
+  z-index:5;
+}
+.single-team:hover .team-content{
+  height: 180px;
+}
+.NAsingle-team:hover .team-content{
+  height: 10px;
+}
+.team-info {
+  padding: 5px 20px 5px 20px;
+  transition: all .5s;
+}
+.single-team:hover .team-content{
+  background: #000;
+}
+.single-team .team-content .team-info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  margin: 5px;
+}
+.single-team:hover .team-info h3{
+  color: maroon;
+}
+.team-info p {
+  margin-top: 15px;
+  color: #fff;
+
+}
+.single-team-text p{
+  margin-top: 5px;
+}
+.team-text {
+  color: #fff;
+  padding: 0 10px 5px;
+  font-size: 12px;
+}
+.card{
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 12px;
+  height: 300px;
+}
+.row {
+  width: 1170px;
+  height: 400px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#calendar {
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
+#calendar h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+#loading {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#calendar {
+  margin: 0px 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-title{
+  text-align: center;
+}
