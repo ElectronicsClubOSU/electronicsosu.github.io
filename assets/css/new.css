@@ -25,8 +25,9 @@ body{
 
 
 .header #icon{
-  position: relative;
-  left: 1400px;
+  margin-top: 20px;
+  position: fixed;
+  right: 30px;
   color: whitesmoke;
 }
 .header-button {
