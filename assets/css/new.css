@@ -23,13 +23,24 @@ body{
     box-shadow: -20px 0 14px 0 rgb(0 0 0 / 10%), inset 0 -1px 0 rgb(0 0 0 / 10%);
 }
 
-
-.header #icon{
-  margin-top: 20px;
+#slides{
+  margin-top: 10px;
+  display: inline-block;
+  text-align: center;
   position: fixed;
-  right: 30px;
+  right: 55px;
   color: whitesmoke;
+  text-decoration: none;
 }
+
+ #slides a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+#slides p{
+  margin-top: 3px;
+}
+
 .header-button {
   position: relative;
   bottom: 8px;
@@ -64,6 +75,11 @@ body{
     display: flex;
     flex-direction: column;
     height: auto;
+    width: 100%;
+}
+
+.empty-main {
+    height: 600px;
     width: 100%;
 }
 
