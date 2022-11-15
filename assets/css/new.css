@@ -402,3 +402,80 @@ footer{
 .section-title{
   text-align: center;
 }
+
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+
+/*nasa project*/
+#nasa-wrapper {
+  margin: 0px 100px 0px 100px;
+  text-align: center;
+}
+#nasa_content {
+  margin: 0px 200px 0px 200px;
+  display: grid;
+  grid-template-columns: 400px 2fr;
+}
+.grid-item-1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#sp-grid-1{
+  margin: 0px 100px 0px 100px;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+}
+
+#sp-grid-1{
+  padding: 0px 100px 0px 100px;
+  display: grid;
+  grid-template-columns: 1fr 30%;
+}
+
+#jasons-project{
+  display: flex;
+  margin: 0px 200px 0px 200px;
+}
+#hack-wrapper{
+  margin: 0px 200px 0px 200px;
+}
+#hack-wrapper p{
+  text-indent: 50px;
+}

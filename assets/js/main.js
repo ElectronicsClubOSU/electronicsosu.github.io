@@ -64,19 +64,31 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
 });
 
 
+function openTab(evt, tabName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
 
 // Calendar
-
-
 $(document).ready(function() {
   $('#calendar').fullCalendar({
 
@@ -87,8 +99,6 @@ $(document).ready(function() {
   listWeek: { buttonText: 'list for this week' }
 },
     aspectRatio: 1.5,
-
-
     eventClick: function(event) {
       // opens events in a popup window
       window.open(event.url, 'gcalevent', 'width=700,height=600');
@@ -111,51 +121,6 @@ $(document).ready(function() {
   });
 });
 
-// js for projects.html
 
-const projectSlides = document.querySelector('.project-slides');
-const projectImages = document.querySelectorAll('.project-slides img');
 
-  //buttons
-const prevBtn = document.querySelector('#prevBtn');
-const nextBtn = document.querySelector('#nextBtn');
-
-  //counter
-let counter = 1;
-const size = projectImages[0].clientWidth;
-
-projectSlides.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-  //button listeners
-
-nextBtn.addEventListener('click', () => {
-  if (counter >= projectImages.length) return;
-  projectSlides.style.transition = "transform 0.4s ease-in-out";
-  counter++;
-  projectSlides.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-})
-
-prevBtn.addEventListener('click', () => {
-  if (counter <= 0) return;
-  projectSlides.style.transition = "transform 0.4s ease-in-out";
-  counter--;
-  projectSlides.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-})
-
-projectSlides.addEventListener('transitionend', () => {
-  if (projectImages[counter].id ==='lastClone'){
-    projectSlides.style.transition = "none";
-    counter = projectImages.length - 2;
-    projectSlides.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-  }
- if (projectImages[counter].id ==='firstClone'){
-    projectSlides.style.transition = "none";
-    counter = projectImages.length - counter;
-    projectSlides.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-  }
-})
 
