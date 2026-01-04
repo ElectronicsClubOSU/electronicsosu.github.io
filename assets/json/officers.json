@@ -1,0 +1,62 @@
+[
+    {
+        "name":"Jared Willets",
+        "position":"President",
+        "bio":"Jared is a third-year CSE major with a passion for making low-cost software products. Recently he has been exploring low-cost household automation and STEM kit creation.",
+        "image":"assets/img/officers/jared_willets.jpeg"
+    },
+    {
+        "name":"Ariela Ramos-Zinter",
+        "position":"Vice President",
+        "bio":"Ariela is a third-year ISE major hoping to go into manufacturing and CAD. Her hobbies are sewing, painting, and reading.",
+        "image":"assets/img/officers/ariela_ramoszinter.jpg"
+    },
+    {
+        "name":"Filip Lillard",
+        "position":"Treasurer",
+        "bio": "Filip is a junior in Electrical Engineering. He is interested in PCB layout and design, chip design, and gaming hardware and software. His hobbies include gaming, dungeons & dragons, reading, and cooking.",
+        "image": "assets/img/officers/filip_lillard.jpg"
+    },
+    {
+        "name":"Edward Lui",
+        "position": "Grad Advisor",
+        "bio":"Edward is a second year aerospace PhD student with a BS in CSE studying space robotics. His hobbies include hiking, swimming, gaming, sailing, and photography.",
+        "image":"assets/img/officers/edward_lui.jpg"
+    },
+    {
+        "name":"Nathan Cheng",
+        "position": "General Officer",
+        "bio":"Nathan is a first year CSE major with interests in 3D printing and robotics. In his spare time he enjoys animation, chess, squash, table tennis, and 3D modeling.",
+        "image": "assets/img/officers/nathan_cheng.jpg"
+    },
+    {
+        "name":"Cadence Forney",
+        "position":"General Officer",
+        "bio":"Cadence is a first year EE major with interests in robotics and 3D printing. In her spare time she enjoys ceramics, fencing and 3D modeling.",
+        "image":"assets/img/officers/cadence_forney.jpg "
+    },
+    {
+        "name":"Ellie Haenick",
+        "position": "General Officer",
+        "bio":"Ellie Haenick is a sophomore electrical engineering major interested in robotics and autonomous systems. Outside of school, Ellie enjoys competitive Rubik’s cube solving, laser engraving and cutting, and volunteering with local community theater organizations.",
+        "image":"assets/img/officers/ellie_haenick.jpg"
+    },
+    {
+        "name":"Junxiong Hui",
+        "position":"General Officer",
+        "image":"assets/img/officers/junxiong_hui.jpg",
+        "bio":"Junxiong is a second-year ECE major focused on Energy & Power. Outside of academia, he likes playing table tennis and cooking."
+    },
+    {
+        "name":"Halina Tri-Leanza",
+        "position": "General Officer",
+        "bio":"",
+        "image":"assets/img/officers/halina_trileanza.jpeg"
+    },
+    {
+        "name":"Steven Bibyk",
+        "position": "Faculty Advisor",
+        "bio":"Professor Bibyk is an Associate Professor of ECE at The Ohio State University. His research includes advanced circuits for signal processing and embedded communication systems.",
+        "image":"assets/img/officers/steven_bibyk.jpg"
+    }
+]
