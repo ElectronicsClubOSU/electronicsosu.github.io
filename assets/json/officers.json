@@ -18,6 +18,18 @@
         "image": "assets/img/officers/filip_lillard.jpg"
     },
     {
+        "name":"Salah Ketfi",
+        "position":"Vice Treasurer",
+        "bio":"Engineering student who enjoys sports and learning new things. Interested in electronics and technology, and motivated to grow skills through teamwork, hands on projects, and active involvement in the club.",
+        "image":"assets/img/officers/salah_ketfi.jpg"
+    },
+    {
+        "name":"Halina Tri-Leanza",
+        "position": "Social Media Coordinator",
+        "bio":"Halina is a senior pursuing Electrical and Computer Engineering with a strong interest in hands-on design and emerging technologies. She hopes to pursue patent law, combining technical expertise with advocacy to help protect innovation and break barriers to accessible pathways for new ideas.",
+        "image":"assets/img/officers/halina_trileanza.jpeg"
+    },
+    {
         "name":"Edward Lui",
         "position": "Grad Advisor",
         "bio":"Edward is a second year aerospace PhD student with a BS in CSE studying space robotics. His hobbies include hiking, swimming, gaming, sailing, and photography.",
@@ -25,7 +37,7 @@
     },
     {
         "name":"Nathan Cheng",
-        "position": "General Officer",
+        "position": "Workshop Developer",
         "bio":"Nathan is a first year CSE major with interests in 3D printing and robotics. In his spare time he enjoys animation, chess, squash, table tennis, and 3D modeling.",
         "image": "assets/img/officers/nathan_cheng.jpg"
     },
@@ -36,22 +48,10 @@
         "image":"assets/img/officers/cadence_forney.jpg "
     },
     {
-        "name":"Ellie Haenick",
-        "position": "General Officer",
-        "bio":"Ellie Haenick is a sophomore electrical engineering major interested in robotics and autonomous systems. Outside of school, Ellie enjoys competitive Rubik’s cube solving, laser engraving and cutting, and volunteering with local community theater organizations.",
-        "image":"assets/img/officers/ellie_haenick.jpg"
-    },
-    {
         "name":"Junxiong Hui",
         "position":"General Officer",
         "image":"assets/img/officers/junxiong_hui.jpg",
         "bio":"Junxiong is a second-year ECE major focused on Energy & Power. Outside of academia, he likes playing table tennis and cooking."
-    },
-    {
-        "name":"Halina Tri-Leanza",
-        "position": "General Officer",
-        "bio":"Halina is a senior pursuing Electrical and Computer Engineering with a strong interest in hands-on design and emerging technologies. She hopes to pursue patent law, combining technical expertise with advocacy to help protect innovation and break barriers to accessible pathways for new ideas.",
-        "image":"assets/img/officers/halina_trileanza.jpeg"
     },
     {
         "name":"Steven Bibyk",
