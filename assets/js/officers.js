@@ -32,7 +32,7 @@ function createCard(name, position, image, bio) {
 }
 
 async function load_officers(officer_div) {
-    await fetch("assets/json/officers.json")
+    await fetch("/assets/json/officers.json")
     .then(res => res.json())
     .then((res) => {
         try {
