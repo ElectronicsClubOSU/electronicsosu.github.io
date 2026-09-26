@@ -1,0 +1,6 @@
+{
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"prettier.configPath": "./prettier.config.js"
+}
