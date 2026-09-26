@@ -1,12 +1,11 @@
 <script lang="ts">
   import { Calendar } from '@fullcalendar/core';
   import dayGridPlugin from '@fullcalendar/daygrid';
-  // @ts-expect-error The package's declaration file does not declare a module.
   import googleCalendarPlugin from '@fullcalendar/google-calendar';
   import { onMount } from 'svelte';
 
   let calendarEl: HTMLDivElement;
-console.log(dayGridPlugin, googleCalendarPlugin);
+
   onMount(() => {
     const calendar = new Calendar(calendarEl, {
       plugins: [dayGridPlugin, googleCalendarPlugin],
@@ -14,8 +13,7 @@ console.log(dayGridPlugin, googleCalendarPlugin);
       initialView: 'dayGridMonth',
       googleCalendarApiKey: 'AIzaSyBu5kL2kgj9AZXCM8kfSLukPx1Vb7bRSh4',
       events: {
-        googleCalendarId: 'electronicsosu@gmail.com',
-        timezone: 'America/New_York'
+        googleCalendarId: 'electronicsosu@gmail.com'
       }
     });
     calendar.render();
