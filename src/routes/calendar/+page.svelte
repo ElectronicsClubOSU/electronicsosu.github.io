@@ -26,6 +26,6 @@
   <title>Calendar - OSU Electronics Club</title>
 </svelte:head>
 
-<div id="intro">
-  <div class="centered" id="calendar" bind:this={calendarEl}></div>
+<div>
+  <div class="mx-auto px-16 py-12 max-w-6xl" bind:this={calendarEl}></div>
 </div>
