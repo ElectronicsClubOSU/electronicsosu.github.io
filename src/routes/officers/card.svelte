@@ -2,17 +2,28 @@
 	let { officer } = $props();
 </script>
 
-<div class="group relative h-90 shadow overflow-hidden">
-  <img src="{officer.image}" class="object-cover h-65 w-full duration-300 group-hover:scale-[1.1]" />
+<div class="group flex flex-col hover:outline-(--accent-color) transition-all duration-200 ease-in-out outline-2 outline-transparent shadow-sm rounded-lg overflow-hidden">
+  <div class="h-65 overflow-hidden">
+    <img src="{officer.image}" alt="officer" class="object-cover h-full w-full duration-200 group-hover:scale-[1.05]" />
+  </div>
 
   <div
-    class="absolute bottom-25 bg-[maroon] text-white text-center translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-25 group-hover:bg-black"
+    class="flex flex-col justify-between gap-1 flex-1 py-4 px-5 bg-(--light-color)"
   >
-    <div class="py-3 px-5 h-25 flex flex-col gap-1">
-      <h3 class="text-xl group-hover:text-[maroon]">{officer.name}</h3>
-      <p>{officer.position}</p>
+    <div>
+      <p class="mb-1 text-xl text-(--black) font-semibold">{officer.name}</p>
+      <p class="mb-4 text-sm text-(--accent-color) font-semibold">{officer.position}</p>
+      <p class="mb-4 text-sm text-(--gray-color)">{officer.bio}</p>
     </div>
-    
-    <p class="p-3 text-xs text-white">{officer.bio}</p>
+
+    <div class="flex items-center gap-4">
+      <a href={officer.linkedin}>
+        <img src="/assets/img/temp/linkedin.svg" alt="linkedin" class="size-5 invert"/>
+      </a>
+      <a href={officer.email}>
+        <img src="/assets/img/temp/email.svg" alt="email" class="size-5 invert"/>
+      </a>
+    </div>
+      
   </div>
 </div>

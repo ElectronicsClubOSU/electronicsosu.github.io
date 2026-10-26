@@ -3,7 +3,9 @@
 		"name": "Jared Willets",
 		"position": "President",
 		"bio": "Jared is a third-year CSE major with a passion for making low-cost software products. Recently he has been exploring low-cost household automation and STEM kit creation.",
-		"image": "/assets/img/officers/jared_willets.jpeg"
+		"image": "/assets/img/officers/jared_willets.jpeg",
+		"linkedin": "localhost",
+		"email": "localhost"
 	},
 	{
 		"name": "Ariela Ramos-Zinter",
