@@ -1,28 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @import 'tailwindcss';
 
 @theme {
-	--light-color: whitesmoke;
-	--gray-color: #dcdcdc;
-	--primary-color: crimson;
-	--accent-color: #e00000;
-	--dark-color: #1e1e1e;
-	--dark-hover: #2e2e30;
-	--black: #111111;
+	--light-color: #FFFFFF;
+	--light-gray-color: #f6f7f8;
+	/* --light-gray-color: #A7B1B7; */
+	--gray-color: #BFC6CB;
+	--accent-color: #BA0C2F;
+	--primary-color: #70071C;
+	--black: #000000;
 }
 
 body {
-	font-family: 'Helvetica', 'Arial', sans-serif;
-	color: #444444;
-	background-color: #fafafa;
+	font-family: 'inter';
+	color: var(--black);
+	background-color: #f6f7f8;
 	overflow-x: hidden;
 	display: flex;
 	min-height: 100vh;
 }
 
-nav .active-page {
-	background-color: #2e2e30;
-	box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
-	color: var(--accent-color);
+h1 {
+	display: flex;
+	align-items: center;
+}
+
+h1::before {
+	display: inline-block;
+	flex-shrink: 0;
+	content: "";
+	width: 0.25rem;
+	background-color: var(--accent-color);
+	height: 2.5rem;
+	margin-right: 1rem;
 }
 
 .icon-fade {
@@ -33,6 +44,3 @@ nav .active-page {
 	box-shadow: 5px 5px 15px #000;
 }
 
-.team-grid {
-	grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
-}
